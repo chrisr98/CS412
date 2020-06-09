@@ -8,7 +8,7 @@ router.route('/')
 
     .post((req,res,next) => {
         const message = req.body.string;
-        const messageLength = str.length;
+        const messageLength = message.length;
         res.render('index', { string: message, length: messageLength});
     });
 
