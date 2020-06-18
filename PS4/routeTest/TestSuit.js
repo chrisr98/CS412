@@ -1,9 +1,8 @@
 const app = require('../app')
 const chai = require('chai');
-const mocha = require('mocha');
 const chaiHttp = require('chai-http'); //has a dependency on mocha
 const {expect} = chai;
-const {describe} = mocha;
+const {describe, it} = require('mocha');
 
 chai.use(chaiHttp);
 
@@ -16,15 +15,15 @@ describe('routeTest', () => {
                 done();
             })
     });
-    it('should return 200 success code when posting to generate questions', function (done) {
+    it('should return 404 success code', function (done) {
         chai.request(app)
             .post('/ps4')
             .end((err, response) => {
-                expect(response).to.have.status(200);
+                expect(response).to.have.status(404);
                 done();
             })
     });
-    it('result should contain a non empty field called quest.', function (done) {
+    it('result should not be empty.', function (done) {
         chai.request(app)
             .post('/ps4')
             .end((err, response) => {
