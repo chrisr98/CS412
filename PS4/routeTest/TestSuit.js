@@ -24,4 +24,12 @@ describe('routeTest', () => {
                 done();
             })
     });
+    it('result should contain a non empty field called quest.', function (done) {
+        chai.request(app)
+            .post('/ps4')
+            .end((err, response) => {
+                expect(response.req.agent.protocol).equals("http:");
+                done();
+            })
+    });
 })

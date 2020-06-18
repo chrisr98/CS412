@@ -1,6 +1,7 @@
-let express = require('express');
+const fetch = require('node-fetch');
+const express = require('express');
+const router = express.Router();
 let request = require("request");
-let router = express.Router();
 
 
 router.get('/', function(req, res, next)  {
