@@ -8,7 +8,7 @@
 
   <ul>
     <li *ngFor="let breed of breeds">
-        <button id="submit" type="button" (click)="selectBreed(breed)">{{breed.name}}</button>
+      <label (click)="selectBreed(breed)">{{breed.name}}</label>
     </li>
   </ul>
 
