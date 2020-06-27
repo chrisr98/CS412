@@ -9,11 +9,16 @@ import { BREED} from './Breeds';
 })
 
 export class AppComponent {
-  title = 'CS412 Breed Names';
+  title = 'PS6';
   breeds = BREEDS;
   selectedBreed: BREED;
+  breedPresent = false;
 
   selectBreed(breed: BREED) {
     this.selectedBreed = breed;
+  }
+
+  chooseIt() {
+    this.breedPresent = true;
   }
 }
