@@ -1,22 +1,2 @@
 Container:
 <app-container></app-container>
-
-
-
-<button id="chooseBreed" type="button" (click)="chooseIt()">Fetch</button>
-
-
-<div *ngIf="breedPresent">
-  <div>
-    <ul>
-      <li *ngFor="let breed of breeds">
-        <label (click)="selectBreed(breed)">{{breed.name}}</label>
-      </li>
-    </ul>
-  </div>
-
-  <!-- display selected breed-->
-  <h2>Details for {{selectedBreed.name}}</h2>
-  <input type="text" [(ngModel)]="selectedBreed.name">
-
-</div>
