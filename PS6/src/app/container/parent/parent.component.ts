@@ -13,7 +13,7 @@ export class ParentComponent implements OnInit {
   breeds = BREEDS;
   selectedBreed: BREED;
   breedPresent = false;
-  messages = ['Hello', 'Morning', 'How are you?'];
+  messages[] = ['Hello', 'Morning', 'How are you?'];
   message = '';
   counter = 0;
   selectBreed(breed: BREED) {
