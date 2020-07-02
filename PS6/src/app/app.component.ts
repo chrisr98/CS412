@@ -9,16 +9,5 @@ import { BREED} from './Breeds';
 })
 
 export class AppComponent {
-  title = 'PS7 App';
-  breeds = BREEDS;
-  selectedBreed: BREED;
-  breedPresent = false;
 
-  selectBreed(breed: BREED) {
-    this.selectedBreed = breed;
-  }
-
-  chooseIt() {
-    this.breedPresent = true;
-  }
 }
