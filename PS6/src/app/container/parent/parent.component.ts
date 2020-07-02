@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {BREEDS} from '../../Breeds-Mock';
-import {BREED} from '../../Breeds';
+import {BREEDS} from '../../Breeds';
+import {BREED} from '../../Breed';
 
 @Component({
   selector: 'app-parent',
