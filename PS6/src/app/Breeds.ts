@@ -1,4 +1,4 @@
-import {BREED} from './Breeds';
+import {BREED} from './Breed';
 
 export const BREEDS: BREED[] =
   [
